@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Pernyataan</title>
+<link rel="stylesheet" href="../css/styleee.css">
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Dapatkan elemen audio dan konten
+      const audio = document.querySelector('audio');
+      const content = document.querySelector('.content');
+      const headerTrigger = document.getElementById('headerTrigger');
+  
+      // Tambahkan event listener untuk klik pada header
+      headerTrigger.addEventListener('click', () => {
+        // Putar audio dan tampilkan .content
+        audio.play();
+        content.style.display = 'block';
+        headerTrigger.classList.add('header-top');
+      });
+    });
+
+</script>
+<style>
+    #headerTrigger {
+      cursor: pointer; /* Membuat kursor menjadi tanda tangan saat mengarah ke elemen */
+      transition: transform 0.3s ease; /* Transisi yang halus untuk transformasi */
+    }
+  
+    #headerTrigger:hover {
+      transform: scale(1.05); /* Sedikit membesar saat di-hover */
+      color: #f56a6a; /* Ubah warna saat di-hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow saat di-hover */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <header id="headerTrigger">
+        <h1>SURAT PERNYATAAN</h1>
+    </header>
+    <div class="pembatas"></div>
+    <div class="content">
+        <h2>THANK FOR U</h2>
+        <p>Selama setahun lebih mengenalmu aku telah mengalami banyak sekali perubahan. Dari sekian banyak orang yang menyemangati, ucapan semangat darimu sangatlah berarti.
+            Ketika kamu tertawa, rasanya dunia ikut tertawa, 
+            dan ketika kamu sedih, aku merasakan ingin 
+            berada di sana untukmu. 
+            Aku peduli padamu lebih 
+            dari yang mungkin kamu sadari. Mengingatmu saja dapat membuat semangatku membara. 
+            Aku sangat 
+            berterima kasih pada tuhan karena
+            telah mengenalkanmu di kehidupanku. Mungkin kata-kata tidak cukup untuk menyatakan apa yang kurasakan, tapi jika kamu bersedia, aku ingin menunjukkan betapa kamu berarti bagiku.</p>
+        <div class="button-container">
+            <a href="../baru/surat.html" class="tombol">LANJUT</a>
+        </div>
+    </div>
+</div>
+<audio>
+    <source src="../sound/Bersamamu.mp3" type="audio/mpeg"/>
+</audio>
+</body>
+</html>

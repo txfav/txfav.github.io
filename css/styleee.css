@@ -1,0 +1,94 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #000000;
+    background-image: url(../img/Snapinsta.app_36148193_1144383222368998_8086949292633227264_n_1080.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menengahkan secara vertikal */
+  height: 100vh; /* Membuat container sebesar tinggi viewport */
+  text-align: center; /* Menengahkan text secara horizontal */
+}
+
+.header-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header h1 {
+    font-family: 'Poppins',cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+.pembatas {
+    height: 100pt;
+}
+
+.content {
+    display: none;
+    box-sizing: border-box;
+    background: rgba(255, 20, 145, 0.716); /* Adjust the color and opacity to match your image */
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 10px auto;
+    width: 80%;
+    height: 440px;
+    max-width: 600px;
+}
+
+.content h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #fff;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px; /* Atau sesuai dengan kebutuhan untuk penempatan vertikal */
+}
+
+.tombol {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f800f4; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah tautan */
+    font-weight: bold; /* Menebalkan teks */
+    border-radius: 5px; /* Memberikan sudut yang bulat pada tombol */
+    transition: background-color 0.3s; /* Efek transisi untuk interaksi */
+}
+
+.tombol:hover {
+    background-color: #e3eaeb; /* Mengganti warna latar tombol saat di-hover */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 95%;
+    }
+}

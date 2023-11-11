@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: rgb(196, 230, 230);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+}
+.salam{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.NAMA{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.NAMA > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 13px #e3eaeb, 0 0 50px #ce15b9, 0 0 100px #930cab;
+    }
+    10%, 90%{
+        color: #3b3636;
+        text-shadow: none;
+    }
+}
+.NAMA > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.NAMA > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.NAMA > span:nth-child(4){
+    animation-delay: .6s;
+}
+.NAMA > span:nth-child(5){
+    animation-delay: .2s;
+}
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Atau sesuai dengan kebutuhan untuk penempatan vertikal */
+}
+
+.tombol {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ce15b9; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah tautan */
+    font-weight: bold; /* Menebalkan teks */
+    border-radius: 5px; /* Memberikan sudut yang bulat pada tombol */
+    transition: background-color 0.3s; /* Efek transisi untuk interaksi */
+}
+
+.tombol:hover {
+    background-color: #e3eaeb; /* Mengganti warna latar tombol saat di-hover */
+}
